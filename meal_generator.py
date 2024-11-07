@@ -3,10 +3,10 @@ from ortools.sat.python import cp_model
 
 # Load your data
 # Read data from CSV files to create pandas DataFrames for each required dataset
-food_df = pd.read_csv('/kaggle/input/food-data/food_202410152357.csv')
-recipe_df = pd.read_csv('/kaggle/input/food-data/recipe_202410162311.csv')
-meal_plan_df = pd.read_csv('/kaggle/input/food-data/meal_plan_202410170111.csv')
-category_df = pd.read_csv('/kaggle/input/food-data/recipe_categories_202410221917.csv')
+food_df = pd.read_csv('food_202410152357.csv')
+recipe_df = pd.read_csv('recipe_202410162311.csv')
+meal_plan_df = pd.read_csv('meal_plan_202410170111.csv')
+category_df = pd.read_csv('recipe_categories_202410221917.csv')
 
 # Convert relevant columns to integers for compatibility in operations
 recipe_df['id'] = recipe_df['id'].astype(int)
