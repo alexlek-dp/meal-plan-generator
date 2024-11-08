@@ -16,10 +16,7 @@ RUN pip install --upgrade pip && \
 
 # Copy application code and data files
 COPY app.py .
-COPY food_202410152357.csv .
 COPY recipe_202410162311.csv .
-COPY meal_plan_202410170111.csv .
-COPY recipe_categories_202410221917.csv .
 
 # Expose the port the app runs on
 EXPOSE 8000
