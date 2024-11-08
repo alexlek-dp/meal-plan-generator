@@ -191,7 +191,7 @@ def format_meal_plan(weekly_plan, calories_per_day):
 
         formatted_plan.append(
             {
-                "day": day_num,
+                "day": day_map[day_num],
                 "meals": daily_meals,
                 "totals": {
                     "calories": float(daily_calories),
