@@ -246,7 +246,7 @@ def format_meal_plan(weekly_plan: List, user_preferences: dict, selected_recipes
 
                 meal_entry = {
                     "recipeId": recipe_id,
-                    "meal_type": recipe_meal_types,
+                    # "meal_type": recipe_meal_types,
                     "name": recipe_data["name"],
                     "servings": meal["amount"],
                     "nutrition": {
